@@ -1,7 +1,7 @@
 package com.sort.selection;
 
 /**
- * Ñ¡ÔñÅÅĞò
+ * é€‰æ‹©æ’åº
  * @author william_wu
  *
  */
@@ -9,7 +9,7 @@ public class SelectionSort {
 	
 	
 	/**
-	 * Ô­Ê¼°æ
+	 * åŸå§‹ç‰ˆ
 	 * @param arr
 	 * @return
 	 */
@@ -34,7 +34,7 @@ public class SelectionSort {
 		
 	}
 	/**
-	 * ÓÅ»¯°æ
+	 * ä¼˜åŒ–ç‰ˆ
 	 * @param arr
 	 * @return
 	 */
@@ -46,17 +46,17 @@ public class SelectionSort {
 			for(int j=i+1;j<arr.length;j++){
 
 				if(arr[j]<arr[k]){
-					k = j;// ¼ÇÂ¼×îĞ¡ÖµµÄÎ»ÖÃ
+					k = j;// è®°å½•æœ€å°å€¼çš„ä½ç½®
 				}
 			}
-			//ÔÚÄÚ²ãÑ­»·½áÊø£¬Ò²¾ÍÊÇÕÒµ½±¾ÂÖÑ­»·µÄ×îĞ¡µÄÊıÒÔºó£¬ÔÙ½øĞĞ½»»»
+			//åœ¨å†…å±‚å¾ªç¯ç»“æŸï¼Œä¹Ÿå°±æ˜¯æ‰¾åˆ°æœ¬è½®å¾ªç¯çš„æœ€å°çš„æ•°ä»¥åï¼Œå†è¿›è¡Œäº¤æ¢
 			if(k!=i){
 				int temp = arr[i];
 				arr[i] = arr[k];
 				arr[k] = temp;
 			}
 		}
-// william_wu33 ĞŞ¸Ä
+// william_wu33 ä¿®æ”¹
 		return arr;
 
 	}
